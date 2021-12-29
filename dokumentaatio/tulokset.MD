@@ -43,7 +43,7 @@ Neuroverkon hidden layerien määrä pidettiin samana, mutta neuronien määrä�
 
 ![yksi_kerros_node16_batch_size_128_256_512.png](/kuvat/yksi_kerros_node16_batch_size_128_256_512.png)
 
-Lisäsin malliin kokeilumielessä vielä toisen hidden layerin. Nyt mallissa oli kaksi kerrosta, joista toisessa oli 16 neuronia ja toisessa 32 neuronia. Oppimisnopeus oli edelleen 0.01 ja batch_sizet 128, 256, 512. Tämä malli osoittautui mielestäni, jo liian monimutkaiseksi kyseiseen ongelmaan.
+Lisäsin malliin kokeilumielessä vielä toisen hidden layerin. Nyt mallissa oli kaksi kerrosta, joista toisessa oli 16 neuronia ja toisessa 32 neuronia. Oppimisnopeus oli edelleen 0.01 ja batch_sizet 128, 256, 512. Tämä malli osoittautui mielestäni jo liian monimutkaiseksi kyseiseen ongelmaan.
 
 ![kaksi_kerros_node_16_ja_32_batch_size_128_256_512.png](/kuvat/kaksi_kerros_node_16_ja_32_batch_size_128_256_512.png)
 
