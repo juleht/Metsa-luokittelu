@@ -23,11 +23,11 @@ Ristietropia = 0.22
 Mallin accuracy: 0.92
 
 
-![raportti](kuvat/raportti.png)
+![raportti](/kuvat/raportti.png)
 
 Lopullisen mallin loss ja accuracy funktiot:
 
-![lopullinen malli](Metsa/src/kuvat/varsinainen malli.png)
+![lopullinen malli](/kuvat/malli.png)
 
 
 ## hyperparametrien säätäminen
@@ -37,16 +37,16 @@ Sopivan mallin etsimiseksi mallia koottii kerros kerrokselta, mallin hyperparame
 
 Ensimmäisessä mallissa oli vain yksi piilotettu kerros 8 neuronilla, oppimisnopeus oli 0.01 ja batch_sizet olivat 64, 128, 256: Malleista batch_size 256, näytti parhaimmalta ja siinä oli selkeästi vähiten ylioppimista.
 
-![yksi_kerros_node8_batch_size_64_128_252.png](src/kuvat/yksi_kerros_node8_batch_size_64_128_252.png)
+![yksi_kerros_node8_batch_size_64_128_252.png](/kuvat/yksi_kerros_node8_batch_size_64_128_252.png)
 
 Neuroverkon hidden layerien määrä pidettiin samana, mutta neuronien määrää nostettin 16 ja batch_sizet nostettiin 128, 256, 512. Oppimisnopeus pidettiin samana 0.01. Tässä mallissa batch_size 256 näytti omasta mielestäni parhaimmalta, vaikka mallissa on vieläkin huomattavissa ylisovittamista.
 
-![yksi_kerros_node16_batch_size_128_256_512.png](Metsa/src/kuvat/yksi_kerros_node16_batch_size_128_256_512.png)
+![yksi_kerros_node16_batch_size_128_256_512.png](/kuvat/yksi_kerros_node16_batch_size_128_256_512.png)
 
 Lisäsin malliin kokeilumielessä vielä toisen hidden layerin. Nyt mallissa oli kaksi kerrosta, joista toisessa oli 16 neuronia ja toisessa 32 neuronia. Oppimisnopeus oli edelleen 0.01 ja batch_sizet 128, 256, 512. Tämä malli osoittautui mielestäni, jo liian monimutkaiseksi kyseiseen ongelmaan.
 
-![kaksi_kerros_node_16_ja_32_batch_size_128_256_512.png](Metsa/src/kuvat/kaksi_kerros_node_16_ja_32_batch_size_128_256_512.png)
+![kaksi_kerros_node_16_ja_32_batch_size_128_256_512.png](/kuvat/kaksi_kerros_node_16_ja_32_batch_size_128_256_512.png)
 
 Kahden piilotetun kerroksen mallin ollessa jo liian monimutkainen. Kokeiltiin nostaa yhden piilotetun kerroksen ja 16 neuronin mallin oppimisnopeutta, jos se parantaisi mallia, mutta se johti ylioppimiseen.
 
-![yksi_kerros_node16_batch_size_128_256_512_lr_0.001.png](Metsa/src/kuvat/yksi_kerros_node16_batch_size_128_256_512_lr_0.001.png)
+![yksi_kerros_node16_batch_size_128_256_512_lr_0.001.png](/kuvat/yksi_kerros_node16_batch_size_128_256_512_lr_0.001.png)
